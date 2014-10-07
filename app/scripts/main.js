@@ -5,7 +5,7 @@ var cont = document.getElementById('mainbox');
 var imageurl,
     item_price,
     currency,
-    shop,
+    shopname,
     desc;
 
 
@@ -13,7 +13,7 @@ items.forEach(function(items){
 
                         items.results.forEach(function(results) {
 
-                            console.log(results.price);
+                            //console.log(results.price);
 
                             item_price = results.price;
 
@@ -21,31 +21,21 @@ items.forEach(function(items){
 
                             desc = results.title;
 
+                            console.log(results.Shop.title);
+
+                            shopname = results.Shop.title;
 
 
                             results.Images.forEach(function (images){
 
-                            // console.log(images.url_170x135);
-
+                             // console.log(images.url_170x135);
 
                               imageurl = images.url_170x135;
 
                             });
 
-                          //  results.Shop.forEach(function (shop){
 
-                            //  console.log(shop.title)
+                            //cont.text('<li>' + imageurl + desc + shopname + price + currency  + '<li>');
 
-
-                            //})
-
-                            })
                           });
-
-
-
-items.forEach (function(items){
-
-      cont.text('<li>' + results  + '<li>');
-
-    });
+                      });
