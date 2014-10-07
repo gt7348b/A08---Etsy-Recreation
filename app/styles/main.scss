@@ -2,6 +2,58 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+@import url('http://fonts.googleapis.com/css?family=Oswald');
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+/*Variables */
+
+/* Colors */
+$color1: hsla(204, 82%, 18%, 1);
+$color2: hsla(206, 84%, 38%, 1);
+$color3: grey;
+$color4: hsla(205, 8%, 40%, 1);
+$color5: hsla(206, 18%, 69%, 1);
+$color6: #fff;
+$color7: #106DB3;
+$color8: black;
+$color9: #FFF;
+
+$fontfamily1: "Oswald", sans-serif;
+$fontfamily2: "Open Sans" Sans-serif;
+
+$std0: 0px;
+$std-4: -4px;
+$std1: 1px;
+$std2: 2px;
+$std5: 5px;
+$std6: 6px;
+$std10: 10px;
+$std11: 11px;
+$std12: 12px;
+$std13: 13px;
+$std14: 14px;
+$std15: 15px;
+$std16: 16px;
+$std20: 20px;
+$std24: 24px;
+$std28: 28px;
+$std50: 50px;
+$std54: 54px;
+$std56: 56px;
+$std74: 74px;
+$std80: 80px;
+$std102: 102px;
+$std200: 200px;
+$std250: 250px;
+$std280: 280px;
+$std325: 325px;
+$std520: 520px;
+$std700: 700px;
+
+
+
+
 // Custom Styles
 body {
   background: #fafafa;
@@ -23,7 +75,74 @@ body {
   section {
     @include outer-container;
     aside { @include span-columns(3); }
-    article { @include span-columns(9); }
+    article { @include span-columns(9);
+              /* Footer Formating */
+        li {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .Foot {
+          clear: both;
+          display: inline-block;
+          font-family:$fontfamily1;
+          margin: 0px auto;
+          height: $std325;
+          width: 1320px;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            font-size: 0px;
+          }
+
+          ul {
+            height: $std325;
+          }
+
+          .box {
+            width: $std325;
+            height: $std325;
+            overflow: hidden;
+            position: relative;
+            background-color: $color2;
+            text-align: left;
+
+            img {
+              opacity: .2;
+              height: $std325;
+
+            }
+
+
+            p.text {
+            color: $color1;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 $std15;
+            font-size: $std28;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 12px;
+            }
+
+            :hover img {
+              opacity: 1;
+            }
+
+            :hover p.text {
+              color: $color9;
+            }
+          }
+        }
+
+
+
+    }
+
+
+
   }
 }
 
