@@ -8,8 +8,18 @@ var imageurl,
     shopname,
     desc;
 
+var sidebar = ['Item type','Categories', 'Price Filter', 'Filter by Color',
+'Ordering Options','Shop Location','Ships To'];
 
-$('.right').text('HASLDKEIWO') // sets the text inside of the element
+sidebar.forEach(function(title){
+  sidebartitle = '<li>' + title + '</li>';
+
+})
+
+
+$('.sidebar').append(sidebartitle);
+
+//$('.').text('HASLDKEIWO') // sets the text inside of the element
 
 
 
@@ -33,14 +43,14 @@ items.forEach(function(items){
 
                             results.Images.forEach(function (images){
 
-                              console.log(images.url_170x135);
+                            //  console.log(images.url_170x135);
 
                               imageurl = images.url_170x135;
 
                             });
 
 
-                            //cont.text('<li>' + imageurl + desc + shopname + price + currency  + '<li>');
+                            //$('.mainbox').html(imageurl + desc + shopname + item_price + currency);
 
                           });
                       });
