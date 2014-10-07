@@ -49,8 +49,17 @@ items.forEach(function(items){
 
                             });
 
-
-                            //$('.mainbox').html(imageurl + desc + shopname + item_price + currency);
-
                           });
+
+
+
                       });
+
+//$('.item').html('<li>
+//    <img src=' + imgageurl + '>
+//    <p class="description">'+ desc + '</p>
+//    <ul class="bottomimg">
+//      <li class="leftimg">' + shopname + '</li>
+//      <li class="rightimg">  $' + price + currency'</li>
+//    </ul>
+//  </li>');
