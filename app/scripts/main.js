@@ -15,7 +15,11 @@ items.forEach(function(items){
 
                             console.log(results.price);
 
-                            item_price = price;
+                            item_price = results.price;
+
+                            currency = results.currency_code;
+
+                            desc = results.title;
 
 
 
