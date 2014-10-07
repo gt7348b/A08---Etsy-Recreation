@@ -75,8 +75,12 @@ body {
   section {
     @include outer-container;
     aside { @include span-columns(3); }
-    article { @include span-columns(9);
-              /* Footer Formating */
+    article {
+
+      @include span-columns(9);
+
+      background-color: $color3;
+
         li {
           display: inline-block;
           vertical-align: middle;
@@ -87,7 +91,6 @@ body {
           display: inline-block;
           font-family:$fontfamily1;
           margin: 0px auto;
-          height: $std325;
           width: 1320px;
           text-align: center;
 
@@ -96,9 +99,25 @@ body {
             font-size: 0px;
           }
 
-          ul {
-            height: $std325;
-          }
+          .item {
+            height: 220px;
+            width: 220px;
+            background-color: $color2;
+            border: 5px solid white;
+            margin: 20px auto;
+            text-align: center;
+
+            .leftimg {
+              float: left;
+              position: relative;
+              text-transform: uppercase; }
+
+            .rightimg {
+              float: right;
+              position: relative;
+              font-family: "Oswald", sans-serif;}
+
+            }
 
           .box {
             width: $std325;
