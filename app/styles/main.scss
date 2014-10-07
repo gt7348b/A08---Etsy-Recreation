@@ -107,17 +107,39 @@ body {
             margin: 20px auto;
             text-align: center;
 
+            .description {
+              width: 250px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;}
+
             .leftimg {
               float: left;
               position: relative;
-              text-transform: uppercase; }
+              text-transform: uppercase;
+              width: 250px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;}
 
             .rightimg {
               float: right;
               position: relative;
-              font-family: "Oswald", sans-serif;}
+              font-family: "Oswald", sans-serif;
+              width: 250px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;}
 
+            p.ad{
+              position:absolute;
+              background-color: $color6;
+              padding: 2px;
+              bottom: 0px;
+              left: 10px;
             }
+
+          }
 
           .box {
             width: $std325;
