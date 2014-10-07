@@ -12,12 +12,12 @@ var sidebar = ['Item type','Categories', 'Price Filter', 'Filter by Color',
 'Ordering Options','Shop Location','Ships To'];
 
 sidebar.forEach(function(title){
-  sidebartitle = '<li>' + title + '</li>';
+  $('.sidebar').append( '<li>' + title + '</li>');
 
 })
 
 
-$('.sidebar').append(sidebartitle);
+//$('.sidebar').append(sidebartitle);
 
 //$('.').text('HASLDKEIWO') // sets the text inside of the element
 
