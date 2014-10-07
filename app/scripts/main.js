@@ -9,6 +9,11 @@ var imageurl,
     desc;
 
 
+$('.right').text('HASLDKEIWO') // sets the text inside of the element
+
+
+
+
 items.forEach(function(items){
 
                         items.results.forEach(function(results) {
@@ -21,14 +26,14 @@ items.forEach(function(items){
 
                             desc = results.title;
 
-                            console.log(results.Shop.title);
+                            //console.log(results.Shop.title);
 
                             shopname = results.Shop.title;
 
 
                             results.Images.forEach(function (images){
 
-                             // console.log(images.url_170x135);
+                              console.log(images.url_170x135);
 
                               imageurl = images.url_170x135;
 
