@@ -75,10 +75,18 @@ body {
   section {
     background-color: $color1;
     @include outer-container;
+
+
     aside {
       @include span-columns(3);
       ul {
         background-color: white;
+        list-style-type: none;
+        text-align: left;
+        color:$color2;
+        font-weight: bold;
+
+
         }
       }
 

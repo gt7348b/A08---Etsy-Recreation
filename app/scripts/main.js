@@ -14,13 +14,7 @@ var sidebar = ['Item type','Categories', 'Price Filter', 'Filter by Color',
 sidebar.forEach(function(title){
   $('.sidebar').append( '<li>' + title + '</li>');
 
-})
-
-
-//$('.sidebar').append(sidebartitle);
-
-//$('.').text('HASLDKEIWO') // sets the text inside of the element
-
+});
 
 
 
@@ -43,7 +37,7 @@ items.forEach(function(items){
 
                             results.Images.forEach(function (images){
 
-                            //  console.log(images.url_170x135);
+                            // console.log(images.url_170x135);
 
                               imageurl = images.url_170x135;
 
@@ -51,15 +45,18 @@ items.forEach(function(items){
 
                           });
 
-
+                      $('.forsale').append('<li>
+                         <div class="item">
+                            <img src=' + imgageurl + '>
+                            <p class="description">'+ desc + '</p>
+                            <ul class="bottomimg">
+                              <li class="leftimg">' + shopname + '</li>
+                              <li class="rightimg">  $' + price + currency'</li>
+                            </ul>
+                            <p class="ad">Ad</p>
+                            <p class"hamburger"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png"</p>
+                            <p class="heart"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png"</p>
+                          </div>
+                        </li>');
 
                       });
-
-//$('.item').html('<li>
-//    <img src=' + imgageurl + '>
-//    <p class="description">'+ desc + '</p>
-//    <ul class="bottomimg">
-//      <li class="leftimg">' + shopname + '</li>
-//      <li class="rightimg">  $' + price + currency'</li>
-//    </ul>
-//  </li>');
