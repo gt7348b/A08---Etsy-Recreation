@@ -94,6 +94,19 @@ body {
         }
 
         .mainbox {
+
+          :hover .item{
+            box-shadow: 3px 3px 5px 6px #ccc;
+
+            .heart{
+            opacity: 0.5;
+            }
+
+            .hamburger{
+            opacity: 0.5;
+            }
+          }
+
           clear: both;
           display: inline-block;
           font-family:$fontfamily1;
@@ -189,8 +202,6 @@ body {
               img {
                 size: 50%
               };
-
-
               }
 
           .box {
