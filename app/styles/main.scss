@@ -22,37 +22,6 @@ $color9: #FFF;
 $fontfamily1: "Oswald", sans-serif;
 $fontfamily2: "Open Sans" Sans-serif;
 
-$std0: 0px;
-$std-4: -4px;
-$std1: 1px;
-$std2: 2px;
-$std5: 5px;
-$std6: 6px;
-$std10: 10px;
-$std11: 11px;
-$std12: 12px;
-$std13: 13px;
-$std14: 14px;
-$std15: 15px;
-$std16: 16px;
-$std20: 20px;
-$std24: 24px;
-$std28: 28px;
-$std50: 50px;
-$std54: 54px;
-$std56: 56px;
-$std74: 74px;
-$std80: 80px;
-$std102: 102px;
-$std200: 200px;
-$std250: 250px;
-$std280: 280px;
-$std325: 325px;
-$std520: 520px;
-$std700: 700px;
-
-
-
 
 // Custom Styles
 body {
@@ -65,7 +34,6 @@ body {
 
   text-align: center;
 }
-
 
 
 .main {
@@ -197,7 +165,7 @@ body {
               background-color: $color2;
               border-radius: 5px;
               font-size: 8px;
-            }
+            };
 
             .hamburger{
               @include position(absolute, 5px 5px null null);
@@ -233,40 +201,7 @@ body {
               };
               }
 
-          .box {
-            width: $std325;
-            height: $std325;
-            overflow: hidden;
-            position: relative;
-            background-color: $color2;
-            text-align: left;
 
-            img {
-              opacity: .2;
-              height: $std325;
-
-            }
-
-
-            p.text {
-            color: $color1;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            padding: 0 $std15;
-            font-size: $std28;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 12px;
-            }
-
-            :hover img {
-              opacity: 1;
-            }
-
-            :hover p.text {
-              color: $color9;
-            }
           }
         }
       }
@@ -276,6 +211,5 @@ body {
 .footer {
 
   text-align: center;
-}
 }
 }
