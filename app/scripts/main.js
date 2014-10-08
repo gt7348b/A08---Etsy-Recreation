@@ -11,10 +11,10 @@ var imageurl,
 var sidebar = ['Item type','Categories', 'Price Filter', 'Filter by Color',
 'Ordering Options','Shop Location','Ships To'];
 
-sidebar.forEach(function(title){
-  $('.sidebar').append( '<li>' + title + '</li>');
+//sidebar.forEach(function(title){
+//  $('.sidebar').append( '<li>' + title + '</li>');
 
-});
+//});
 
 
 
