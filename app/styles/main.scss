@@ -47,26 +47,43 @@ body {
 
     aside {
       @include span-columns(3);
+      text-align: center;
+
+      p {
+        font-size: 12px;
+        color:$color2;
+        font-weight: bold;
+      }
 
       ul {
         background-color: white;
         list-style-type: none;
         text-align: left;
+        font-size: 12px;
         color:$color2;
         font-weight: bold;
+    //    width: 220px;
+        @include margin( null 20px 0 20px);
+      }
+
+      .sidebar{
+        @include padding(null null null 10px);
       }
 
       .categories {
 
       ul {
+          list-style-type: none;
           color: $color3;
+          @include padding(null null null 10px);
           }
         }
 
       li {
         font-weight: normal;
         color: $color3;
-        padding: 5px;
+        @include padding(5px null 5px 10px);
+        @include margin( null 0px 0 0px);
       }
 
       .price{
@@ -83,22 +100,31 @@ body {
       @include span-columns(9);
 
       background-color: $color1;
+      color: $color4;
+      font-size: 12px;
+
+      p {
+        font-size: 12px;
+        color:$color2;
+        font-weight: bold;
+      }
 
       .HeaderLeft {
         float: left;
         position: relative;
         top: 10px;
         left: 10px;
-        text-transform: uppercase;
       }
 
       .HeaderRight {
         float: right;
         position: relative;
-        top: 10px;
-        right: 10px;
-        font-family:$fontfamily1;
-        text-transform: uppercase;
+        top: 20px;
+        right: 20px;
+
+        .relevancy{
+          color: $color3;
+        }
       }
 
 
@@ -141,6 +167,8 @@ body {
             background-color: white;
             border: 5px solid white;
             text-align: center;
+            box-shadow: 1px null null 1px $color2;
+
 
             .description {
               text-align: left;
