@@ -62,4 +62,6 @@ items.forEach(function(items){
                       });
 
 
+$('.description').text(desc);
+
 $('.rightimg').text("$"+item_price + "  " +currency);

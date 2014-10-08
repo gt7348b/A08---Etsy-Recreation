@@ -85,9 +85,12 @@ body {
         text-align: left;
         color:$color2;
         font-weight: bold;
-
-
         }
+
+      li {
+        font-weight: normal;
+        color: $color3
+      }
       }
 
     article {
