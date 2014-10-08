@@ -108,7 +108,8 @@ body {
             text-align: center;
 
             .description {
-              width: 250px;
+              text-align: left;
+              width: 200px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -117,9 +118,10 @@ body {
 
             .leftimg {
               float: left;
+              text-align: left;
               position: relative;
               text-transform: uppercase;
-              width: 250px;
+              width: 75px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -130,7 +132,7 @@ body {
               float: right;
               position: relative;
               font-family: "Oswald", sans-serif;
-              width: 250px;
+              width: 75px;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
@@ -138,11 +140,9 @@ body {
               }
 
             p.ad{
-              position:absolute;
+              @include position(relative, 0px null null 0px);
               background-color: $color6;
               padding: 2px;
-              bottom: 0px;
-              left: 10px;
               color: white;
               background-color: $color2;
               border-radius: 5px;
