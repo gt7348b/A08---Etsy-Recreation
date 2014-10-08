@@ -9,12 +9,12 @@
 /*Variables */
 
 /* Colors */
-$color1: hsla(204, 82%, 18%, 1);
-$color2: hsla(206, 84%, 38%, 1);
-$color3: grey;
-$color4: hsla(205, 8%, 40%, 1);
-$color5: hsla(206, 18%, 69%, 1);
-$color6: #fff;
+$color1: hsl(60,16,95);   // background color
+$color2: #776666;         // Dark grey text color
+$color3: #6092b5;         // blus sidebar text color
+$color4: #666666;         // non bold text color
+$color5: #b2b2b2;         // light grey Shop name color
+$color6: #78c042;         // price color
 $color7: #106DB3;
 $color8: black;
 $color9: #FFF;
@@ -73,13 +73,15 @@ body {
   text-align: center;
 
   section {
+    background-color: $color1;
     @include outer-container;
     aside { @include span-columns(3); }
+
     article {
 
       @include span-columns(9);
 
-      background-color: $color3;
+      background-color: $color1;
 
         li {
           display: inline-block;
@@ -91,7 +93,6 @@ body {
           display: inline-block;
           font-family:$fontfamily1;
           margin: 0px auto;
-          width: 1320px;
           text-align: center;
 
           a {
@@ -100,9 +101,8 @@ body {
           }
 
           .item {
-            height: 220px;
-            width: 220px;
-            background-color: $color2;
+            @include size(220px 220px);
+            background-color: white;
             border: 5px solid white;
             margin: 20px auto;
             text-align: center;
@@ -111,7 +111,9 @@ body {
               width: 250px;
               white-space: nowrap;
               overflow: hidden;
-              text-overflow: ellipsis;}
+              text-overflow: ellipsis;
+              color: $color4;
+              }
 
             .leftimg {
               float: left;
@@ -120,7 +122,9 @@ body {
               width: 250px;
               white-space: nowrap;
               overflow: hidden;
-              text-overflow: ellipsis;}
+              text-overflow: ellipsis;
+              color: $color5;
+              }
 
             .rightimg {
               float: right;
@@ -129,7 +133,9 @@ body {
               width: 250px;
               white-space: nowrap;
               overflow: hidden;
-              text-overflow: ellipsis;}
+              text-overflow: ellipsis;
+              color: $color6;
+              }
 
             p.ad{
               position:absolute;
