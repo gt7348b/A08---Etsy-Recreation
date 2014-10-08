@@ -102,6 +102,7 @@ body {
 
           .item {
             @include size(220px 220px);
+            position: relative;
             background-color: white;
             border: 5px solid white;
             margin: 20px auto;
@@ -140,8 +141,11 @@ body {
               }
 
             p.ad{
-              @include position(relative, 0px null null 0px);
+              @include position(absolute, 0px null null 5px);
+              @include size(25px 25px);
+              margin: 0px;
               background-color: $color6;
+              opacity: 0.5;
               padding: 2px;
               color: white;
               background-color: $color2;
