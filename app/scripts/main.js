@@ -43,22 +43,25 @@ items.forEach(function(items){
 
                             });
 
+                            $('.forsale').append( imageurl + '<li class="leftimg">' + shopname + '</li>' + '<li class="rightimg">' + item_price + '</li>' );
+
+                            //$('.forsale').append('<li>
+                              //                       <div class="item">
+                                //                        <img src=' + imgageurl + '>
+                                  //                      <p class="description">'+ desc + '</p>
+                                    //                    <ul class="bottomimg">
+                                      //                    <li class="leftimg">' + shopname + '</li>
+                                        //                  <li class="rightimg">  $' + price + currency'</li>
+                                          //              </ul>
+                                            //            <p class="ad">Ad</p>
+                                              //          <p class"hamburger"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png"</p>
+                                                //        <p class="heart"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png"</p>
+                                                  //    </div>
+                                                    //</li>');
+
                           });
 
-//                      $('.forsale').append('<li>
-  //                       <div class="item">
-    //                        <img src=' + imgageurl + '>
-      //                      <p class="description">'+ desc + '</p>
-        //                    <ul class="bottomimg">
-          //                    <li class="leftimg">' + shopname + '</li>
-            //                  <li class="rightimg">  $' + price + currency'</li>
-              //              </ul>
-                //            <p class="ad">Ad</p>
-                  //          <p class"hamburger"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png"</p>
-                    //        <p class="heart"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png"</p>
-                      //    </div>
-                        //</li>');
-
+//
                       });
 
 
