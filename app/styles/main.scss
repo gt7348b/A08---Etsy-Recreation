@@ -84,6 +84,24 @@ body {
 
       background-color: $color1;
 
+      .HeaderLeft {
+        float: left;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        text-transform: uppercase;
+      }
+
+      .HeaderRight {
+        float: right;
+        position: relative;
+        top: 10px;
+        right: 10px;
+        font-family:$fontfamily1;
+        text-transform: uppercase;
+      }
+
+
         li {
           display: inline-block;
           vertical-align: middle;
@@ -91,7 +109,7 @@ body {
 
         .mainbox {
 
-          :hover .item{
+          :hover.item{
             box-shadow: 1px 1px 1px 1px $color2;
 
             .heart{
@@ -116,10 +134,12 @@ body {
 
           .item {
             @include size(220px 220px);
+            @include margin(10px 13px 10px 13px);
+            font-family: $helvetica;
+            font-size: 12px;
             position: relative;
             background-color: white;
             border: 5px solid white;
-            margin: 20px auto;
             text-align: center;
 
             .description {
