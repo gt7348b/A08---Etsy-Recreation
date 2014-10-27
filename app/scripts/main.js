@@ -56,7 +56,7 @@ items.forEach(function(items){
                                         //                  <li class="rightimg">  $' + price + currency'</li>
                                           //              </ul>
                                             //            <p class="ad">Ad</p>
-                                              //          <p class"hamburger"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png"</p>
+                                              //          <p class="hamburger"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/hamburger.png"</p>
                                                 //        <p class="heart"><img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2008/assets/heart.png"</p>
                                                   //    </div>
                                                     //</li>');
